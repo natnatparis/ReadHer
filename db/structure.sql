@@ -345,13 +345,9 @@ CREATE TABLE public.users (
     description character varying,
     last_name character varying,
     first_name character varying,
-<<<<<<< HEAD
     city character varying,
     username character varying,
     admin boolean DEFAULT false
-=======
-    city character varying
->>>>>>> 980eaa2785f80139d3c55a1790f625d504a70aa0
 );
 
 
@@ -712,12 +708,8 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190916124233'),
 ('20190917115450'),
 ('20190917115500'),
-<<<<<<< HEAD
 ('20190918085615'),
 ('20190919092112'),
 ('20190919160206');
-=======
-('20190918085615');
->>>>>>> 980eaa2785f80139d3c55a1790f625d504a70aa0
 
 
