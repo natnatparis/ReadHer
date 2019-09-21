@@ -346,8 +346,7 @@ CREATE TABLE public.users (
     last_name character varying,
     first_name character varying,
     city character varying,
-    username character varying,
-    admin boolean DEFAULT false
+    username character varying
 );
 
 
@@ -578,6 +577,13 @@ CREATE INDEX index_crushes_on_author_name ON public.crushes USING gist (author_n
 
 
 --
+-- Name: index_crushes_on_book_title; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX index_crushes_on_book_title ON public.crushes USING gist (book_title);
+
+
+--
 -- Name: index_crushes_on_user_id; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -702,7 +708,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190917115450'),
 ('20190917115500'),
 ('20190918085615'),
-('20190919092112'),
 ('20190919160206');
 
 
