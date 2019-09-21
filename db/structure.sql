@@ -345,22 +345,9 @@ CREATE TABLE public.users (
     description character varying,
     last_name character varying,
     first_name character varying,
-<<<<<<< HEAD
     city character varying,
     username character varying,
     admin boolean DEFAULT false
-=======
-<<<<<<< HEAD
-    city character varying,
-<<<<<<< HEAD
-    username character varying
-=======
-    admin boolean DEFAULT false
->>>>>>> 789da70af786926e4e4f1fa613d3f4cebc59e766
-=======
-    city character varying
->>>>>>> 0bb7301559d1ef7466264a556a06a0ef10aa2414
->>>>>>> 7bc5597e2f95558ef195e7ddd50d8b945cae0493
 );
 
 
@@ -588,13 +575,6 @@ CREATE INDEX index_crush_libraries_on_library_id ON public.crush_libraries USING
 --
 
 CREATE INDEX index_crushes_on_author_name ON public.crushes USING gist (author_name);
-
-
---
--- Name: index_crushes_on_book_title; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX index_crushes_on_book_title ON public.crushes USING gist (book_title);
 
 
 --
