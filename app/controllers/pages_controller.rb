@@ -5,7 +5,14 @@ class PagesController < ApplicationController
     def index
     end
     
-    def about; end
+    def about 
+    end
+
+    def policy
+    end 
+    
+    def manifesto
+    end
 
     def welcome_page
       @disable_nav = true

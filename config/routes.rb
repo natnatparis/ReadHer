@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   get 'users/show'
   get 'pages/about'
+  get 'pages/policy'
+  get 'pages/manifesto'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :crushes
@@ -13,6 +16,7 @@ Rails.application.routes.draw do
   resources :pages, only: [:index]
 
   root :to => "pages#welcome_page"
+
 
   resources :users, only: [:show]
 
